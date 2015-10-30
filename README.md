@@ -88,7 +88,7 @@ This script finds unused servers based on service discovery and optionally add
 the instances to the retirement queue.
   - **fix_orphaned_shards.py**
 This script picks up where find_shard_mismatches.py left off and rename and then
-eventually drop the unused shards.
+eventually drops the unused shards.
   - **get_recent_checksums.py**
 Use data populated by mysql_checksum.py to display current replication
 consistency data.
@@ -120,7 +120,7 @@ a replica set name or in some cases a shard name and will determine the
 current hosts in productions and then launches a mysql cli in the shell
 using a read only username and password. It can also use a variety of
 privileges such as a read write connection or a admin connections. It can also
-accept a hostname and just figure out usernames and passwords.
+accept a hostname and automatically figure out usernames and passwords.
   - **mysql_cnf_builder.py**
 This script builds MySQL configuration files based on global defaults, and then
 overrides for workload type, hardware and MySQL version. Several example
