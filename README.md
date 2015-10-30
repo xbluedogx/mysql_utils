@@ -88,7 +88,7 @@ This script finds unused servers based on service discovery and optionally add
 the instances to the retirement queue.
   - **fix_orphaned_shards.py**
 This script picks up where find_shard_mismatches.py left off and rename and then
-eventually drop the unused shards.
+eventually drops the unused shards.
   - **get_recent_checksums.py**
 Use data populated by mysql_checksum.py to display current replication
 consistency data.
