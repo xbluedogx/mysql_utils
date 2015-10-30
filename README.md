@@ -22,7 +22,7 @@ Historically MySQL was used with multiple writable instances in a replica set.
 This topology is error prone and has been simplified to a single master with
 one or more slaves.
   - **Zookeeper provides service discovery**
-The contract between the administrative tools and the MySQL applications is
+The contract between the administrative tools and the MySQL applications is via
 Zookeeper.  With few exceptions, Zookeeper provides clients with database
 hostnames, usernames and passwords.
 
@@ -56,7 +56,7 @@ either either living or dead initial masters, modifies MySQL replication
 topology, and then updates service discovery.
 
 After a server has been removed from service discovery, it will be subject to a
-retirement queue system. This system has several steps that lead to eventual
+retirement queue system. This system has several steps that lead to the eventual
 termination of a server:
   - Based on service discovery, servers that are not in use will have several
 status counters reset.
